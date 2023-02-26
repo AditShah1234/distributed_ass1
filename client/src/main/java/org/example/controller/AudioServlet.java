@@ -35,9 +35,9 @@ public class AudioServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String url = request.getParameter("url");
-		Integer no_gets = Integer.valueOf(request.getParameter("no_gets"));
+		Integer no_gets1 = Integer.valueOf(request.getParameter("no_gets1"));
 		Integer no_clients = Integer.valueOf(request.getParameter("no_clients"));
-
+		Integer no_gets2 = Integer.valueOf(request.getParameter("no_gets2"));
 		Gson gson = new Gson();
 
 		PrintWriter out = response.getWriter();
@@ -48,7 +48,7 @@ public class AudioServlet extends HttpServlet {
 
 		List<thread_client> clients = new ArrayList<>();
 		for (int i = 0; i < no_clients; i++) {
-			thread_client R1 = new thread_client(Integer.toString(i), url, no_gets);
+			thread_client R1 = new thread_client(Integer.toString(i), url, no_gets1,no_gets2);
 			R1.start();
 			clients.add(R1);
 		}

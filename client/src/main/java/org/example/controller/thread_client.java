@@ -16,13 +16,15 @@ public class thread_client implements Runnable {
     private Thread t;
     private String threadName;
     private String url;
-    int n;
+    int n,n1;
     private Instant start_now,end_now;
     private Duration timeElapsed;
-    thread_client( String name, String url, Integer n) {
+
+    thread_client( String name, String url, Integer n,Integer n1) {
         threadName = name;
         this.url =url;
         this.n =n;
+        this.n1=n1;
         System.out.println("Creating " +  threadName );
     }
 
@@ -68,12 +70,24 @@ public class thread_client implements Runnable {
                 String responseContent = IOUtils.toString(response_get.getContent());
                 System.out.println(responseContent+ Integer.toString(i) );
             }
+
+            for ( int i =0;i<n1;i++) {
+
+
+                Request request_get = client.newRequest(url);
+                request_get.param("name","udito");
+                ContentResponse response_get = request_get.send();
+                assertThat(response_get.getStatus(), equalTo(200));
+                String responseContent = IOUtils.toString(response_get.getContent());
+                System.out.println(responseContent+ Integer.toString(i) );
+            }
+
             end_now = Instant.now();
 
             client.stop();
             timeElapsed = Duration.between(start_now, end_now);
 
-            timeElapsed = timeElapsed.dividedBy(n+1);
+            timeElapsed = timeElapsed.dividedBy(n+1+n1);
             System.out.println("Creating " +  threadName +"executed success");
         }catch (InterruptedException e) {
             System.out.println("Thread " +  threadName + " interrupted.");
