@@ -15,7 +15,7 @@ no_gets_list2 = [1,3,5]
 no_clients_list =[10,50,100]
 outlist =[]
 i=0
-split = 0.30
+split = 0.5
 colour = ["red", "blue", "yellow", "green", "orange", "purple", "brown", "pink", "black"]
 ax = plt.subplot(111, projection='3d')
 for no_get in no_gets_list:

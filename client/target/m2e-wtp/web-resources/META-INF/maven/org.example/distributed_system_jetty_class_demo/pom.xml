@@ -91,7 +91,13 @@
     <artifactId>commons-io</artifactId>
     <version>2.11.0</version>
 </dependency>
-        
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>2.2</version>
+            <scope>compile</scope>
+        </dependency>
+
     </dependencies>
 
 
@@ -107,8 +113,8 @@
          <artifactId>maven-compiler-plugin</artifactId>
          <version>3.5.1</version>
          <configuration>
-             <source>1.8</source>
-             <target>1.8</target>
+             <source>9</source>
+             <target>9</target>
         	 </configuration>
      		</plugin>
             <!-- jetty plugin for deployment -->
