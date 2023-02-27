@@ -1,20 +1,13 @@
-# distributed_ass1
-# Title / Repository Name
-Distriibuted System Assignment 1
-## About / Synopsis
+# Distributed System Assignment 1
+## About
 
-* The goal is to create the server which can save audio informations in the i memory database.
+* The goal is to create the server which can save audio informations in the in memory database.
 * Make a multi threaded client to stress test the server.
 * Host the server on the cloud oracle with red hat Linux
 
-
-
-
 ## Table of contents
 
-
-
-> * [Title / Repository Name](#title--repository-name)
+>   * [Title / Repository Name](#title--repository-name)
 >   * [About / Synopsis](#about--synopsis)
 >   * [Table of contents](#table-of-contents)
 >   * [Install Server](#Installatio--Server)
@@ -76,3 +69,15 @@ https://app.swaggerhub.com/apis-docs/ASHAH9497/Assignment1/1.0.0
 ![Analysis](/screenshot/10_2.png?raw=true)
 ![Analysis](/screenshot/2d_2.png?raw=true)
 ![Analysis](/screenshot/3d_2.png?raw=true)
+
+## References: 
+
+https://github.com/youyinnn/distributed_system_jetty_helloworld 
+
+https://www.tutorialspoint.com/servlets/index.htm 
+
+https://swagger.io/docs/specification/describing-parameters/ 
+
+https://www.youtube.com/watch?v=TCd8QIS-2KI ; 
+
+ 
