@@ -17,13 +17,13 @@ Distriibuted System Assignment 1
 > * [Title / Repository Name](#title--repository-name)
 >   * [About / Synopsis](#about--synopsis)
 >   * [Table of contents](#table-of-contents)
->   * [Install Server](#Installation Server)
->   * [Install Client](#Installation Client)
+>   * [Install Server](#Installatio--Server)
+>   * [Install Client](#Installation--Client)
 >   * [Swagger](#Swagger)
 >   * [Results](#Results)
 
 ## Installation Server
-![Oracle Free Tier](https://www.oracle.com/cloud/free/#always-free)
+Make a cloud instance on https://www.oracle.com/cloud/free/#always-free
 ![Oracle Instance](/screenshot/oracle.png?raw=true "Oracle Instance")
 ## Run commands
 Do ssh to the instance 
