@@ -12,7 +12,7 @@ headers = {
 
 no_gets_list = [2,5,10]
 no_gets_list2 = [1,3,5]
-no_clients_list =[10,50,100]
+no_clients_list =[10]
 outlist =[]
 i=0
 split = 0.5

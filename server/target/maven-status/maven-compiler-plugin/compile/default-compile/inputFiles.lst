@@ -1,4 +1,4 @@
-/Users/aditshah/studies/winter-2023/distributed/assignment/distributed_ass1/distributed_ass1/src/main/java/org/example/controller/AudioServlet.java
-/Users/aditshah/studies/winter-2023/distributed/assignment/distributed_ass1/distributed_ass1/src/main/java/org/example/controller/HelloServlet.java
-/Users/aditshah/studies/winter-2023/distributed/assignment/distributed_ass1/distributed_ass1/src/main/java/org/example/model/Audio.java
-/Users/aditshah/studies/winter-2023/distributed/assignment/distributed_ass1/distributed_ass1/src/main/java/org/example/EmbeddingJettyStarter.java
+/Users/aditshah/studies/winter-2023/distributed/assignment/distributed_ass1/server/src/main/java/org/example/model/Audio.java
+/Users/aditshah/studies/winter-2023/distributed/assignment/distributed_ass1/server/src/main/java/org/example/controller/AudioServlet.java
+/Users/aditshah/studies/winter-2023/distributed/assignment/distributed_ass1/server/src/main/java/org/example/controller/HelloServlet.java
+/Users/aditshah/studies/winter-2023/distributed/assignment/distributed_ass1/server/src/main/java/org/example/EmbeddingJettyStarter.java

@@ -56,7 +56,7 @@ public class AudioServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		response.setContentType("application/json");
 		response.setCharacterEncoding("UTF-8");
-
+		System.out.println(name+track+album+artist_all);
 		if (name == null && track == null && album == null && artist_all == null) {
 			JsonElement element = gson.toJsonTree(audioMasterDB);
 			JsonElement elementN = gson.toJsonTree(audioNameDB);
@@ -66,7 +66,7 @@ public class AudioServlet extends HttpServlet {
 
 			out.flush();
 		} else if (artist_all != null) {
-			if (artist_all=="true") {
+			if (artist_all.equals("true")) {
 			out.println("GET RESPONSE IN JSON - all elements " + audioNameDB.keySet().toString()+ " total sale " + String.valueOf(total_copies_sold_all));
 
 			out.flush();

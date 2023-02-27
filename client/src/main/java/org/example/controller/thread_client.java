@@ -75,7 +75,7 @@ public class thread_client implements Runnable {
 
 
                 Request request_get = client.newRequest(url);
-                request_get.param("name","udito");
+                request_get.param("name","artist900");
                 ContentResponse response_get = request_get.send();
                 assertThat(response_get.getStatus(), equalTo(200));
                 String responseContent = IOUtils.toString(response_get.getContent());
