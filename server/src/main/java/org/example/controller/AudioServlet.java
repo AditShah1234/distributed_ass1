@@ -66,10 +66,11 @@ public class AudioServlet extends HttpServlet {
 
 			out.flush();
 		} else if (artist_all != null) {
-
+			if (artist_all=="true") {
 			out.println("GET RESPONSE IN JSON - all elements " + audioNameDB.keySet().toString()+ " total sale " + String.valueOf(total_copies_sold_all));
 
 			out.flush();
+			}
 		} else {
 
 			if (name != null) {
